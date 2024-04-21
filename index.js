@@ -11,7 +11,7 @@ const api = new Twit({
   access_token_secret: process.env.twitterAccessTokenSecret,
 });
 
-const openaiApiKey = "sk-proj-5a5xGFTjLp4vlApm9vGBT3BlbkFJl0epv0oAacQMYtcegNb1";
+const openaiApiKey = process.env.openaiApiKey;
 
 
 // Step 4: Search for tweets using the Twitter API
