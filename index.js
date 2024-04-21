@@ -1,16 +1,14 @@
 const Twit = require('twit')
 const axios = require('axios')
+const dotenv = require('dotenv')
+dotenv.config();
 
-const twitterConsumerKey = "BCdNvq3OEKq6vFQ7JYaiQ2J1W";
-const twitterConsumerSecret = "AZBHWalYfMbGmCHzWnGZWBDdtBqVdkuMHt1uIvGmDjpNhgu0Ti";
-const twitterAccessToken = "1610011099675377665-T9RzOsBEt4FelXjZJxsav1YCJYE8mJ";
-const twitterAccessTokenSecret = "EDunj8P1csVNhfRlvDgV94MIL4BCKByig94WK3Fz7qMb2";
 
 const api = new Twit({
-  consumer_key: twitterConsumerKey,
-  consumer_secret: twitterConsumerSecret,
-  access_token: twitterAccessToken,
-  access_token_secret: twitterAccessTokenSecret,
+  consumer_key: process.env.twitterConsumerKey,
+  consumer_secret: process.env.twitterConsumerSecret,
+  access_token: process.env.twitterAccessToken,
+  access_token_secret: process.env.twitterAccessTokenSecret,
 });
 
 const openaiApiKey = "sk-proj-5a5xGFTjLp4vlApm9vGBT3BlbkFJl0epv0oAacQMYtcegNb1";
