@@ -12,8 +12,6 @@ const api = new Twit({
 });
 
 const openaiApiKey = process.env.openaiApiKey;
-
-
 // Step 4: Search for tweets using the Twitter API
 
 const query = 'javascript';
